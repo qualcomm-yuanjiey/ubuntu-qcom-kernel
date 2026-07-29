@@ -1250,6 +1250,10 @@
 				power-domains = <&rpmhpd RPMHPD_CX>;
 				operating-points-v2 = <&qup_opp_table>;
 				status = "disabled";
+
+				port {
+					uart2_ep: endpoint {};
+				};
 			};
 
 			i2c3: i2c@98c000 {
@@ -2468,6 +2472,10 @@
 				#size-cells = <2>;
 				ranges;
 				phys = <&pcie0_phy>;
+
+				port {
+					pcieport0_ep: endpoint {};
+				};
 			};
 		};
 
